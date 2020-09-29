@@ -1,0 +1,60 @@
+.about {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.about .contentBx {
+    background: #162c3b;
+    padding: 100px;
+    width: 70%;
+}
+
+.about .contentBx .text {
+    line-height: 1.5;
+}
+
+.about .imgBx {
+    background: url(/images/ankitsalian.jpg);
+    width: 30%;
+    background-size: cover;
+    background-position: center;
+    margin: 40px;
+}
+
+.resume-button {
+    margin-top: 20px;
+}
+
+.resume-button a {
+    text-decoration: none;
+}
+
+.download {
+    color: black !important;
+    background-color: whitesmoke !important;
+}
+
+.download:hover {
+    color: black !important;
+    background-color: orange !important;
+}
+
+@media (max-width: 991px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .about .contentBx,
+    .about .imgBx {
+        width: 100%;
+        padding: 50px;
+        min-height: 400px;
+        text-align: center;
+    }
+
+    .about .imgBx {
+        margin: 0;
+        
+    }
+}
